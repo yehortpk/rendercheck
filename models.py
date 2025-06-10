@@ -1,7 +1,7 @@
-from pydantic import BaseModel
+from dataclasses import dataclass
 
-
-class ScrappingResult(BaseModel):
+@dataclass
+class ScrappingResult:
     url: str
     status: int
     html: str
